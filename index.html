@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic-Bit</title>
+    <link rel="stylesheet" href="stayl.css">
+</head>
+<body>
+    <!-- Header -->
+  <header id="header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Savore مطعم">
+        <span class="logo">S</span>
+        <span>مطعم سافور</span>
+      </a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#menu">القائمة</a>
+        <a href="#offers">العروض</a>
+        <a href="#contact">تواصل</a>
+        <a href="#reservation" class="btn reserve-btn">احجز الآن</a>
+      </nav>
+      <button class="hamburger" id="burger" aria-label="قائمة" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+      </button>
+    </div>
+    <div class="container mobile-panel" id="mobileNav" hidden>
+      <a href="#home">الرئيسية</a>
+      <a href="#menu">القائمة</a>
+      <a href="#offers">العروض</a>
+      <a href="#contact">تواصل</a>
+      <a href="#reservation" class="btn" style="margin-top:8px">احجز الآن</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container grid">
+      <div class="reveal">
+        <h1>طعام يليقُ بذوقك – نكهات أصلية وتجربة لا تُنسى</h1>
+        <p>استمتع بقائمة مختارة بعناية من الأطباق العالمية والمشروبات الطازجة، مع خدمة راقية وأجواء دافئة.</p>
+        <a class="btn" href="#menu" aria-label="عرض القائمة">اطّلع على القائمة</a>
+      </div>
+      <div class="media reveal" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop" alt="طبق مميز من اللحم مع الخضار" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section alt" id="why">
+    <div class="container">
+      <h2 class="title">لماذا تختارنا؟</h2>
+      <p class="subtitle">مكونات طازجة، وصفات خاصة، وخدمة سريعة لضمان أفضل تجربة.</p>
+      <div class="icons-grid">
+        <article class="icon-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div class="icon-title">مكونات طازجة</div>
+          <div>نختار أفضل الموردين يوميًا لضمان الجودة والمذاق.</div>
+        </article>
+        <article class="icon-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div class="icon-title">وصفات خاصة</div>
+          <div>وصفات مبتكرة بنكهة لا تجدها إلاّ لدينا.</div>
+        </article>
+        <article class="icon-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v6l4 2" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div class="icon-title">تقديم سريع</div>
+          <div>نجهّز طلبك بسرعة دون التنازل عن الجودة.</div>
+        </article>
+        <article class="icon-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18M5 21V8a7 7 0 0114 0v13" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div class="icon-title">أجواء مريحة</div>
+          <div>ديكور هادئ ومساحات مناسبة للعائلات والأصدقاء.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <div class="container">
+      <h2 class="title">القائمة</h2>
+      <p class="subtitle">اختر فئتك المفضلة وشاهد الأطباق المتاحة.</p>
+      <div class="filters" role="tablist" aria-label="فلاتر القائمة">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">الكل</button>
+        <button class="filter-btn" data-filter="main" role="tab">وجبات رئيسية</button>
+        <button class="filter-btn" data-filter="drinks" role="tab">مشروبات</button>
+        <button class="filter-btn" data-filter="desserts" role="tab">حلويات</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- أمثلة أطباق (أضف/عدّل بحرية) -->
+        <article class="dish reveal" data-category="main">
+          <img src="OIP (1).webp" alt="ستيك مشوي" />
+          <div class="info">
+            <div>
+              <div class="name">ستيك مشوي</div>
+              <small>يُقدّم مع خضار سوتيه</small>
+            </div>
+            <div class="price">220 ج.م</div>
+          </div>
+        </article>
+        <article class="dish reveal" data-category="main">
+          <img src="images.jpeg" alt="باستا ألفريدو" />
+          <div class="info">
+            <div>
+              <div class="name">باستا ألفريدو</div>
+              <small>صلصة كريمية مع دجاج</small>
+            </div>
+            <div class="price">160 ج.م</div>
+          </div>
+        </article>
+        <article class="dish reveal" data-category="drinks">
+          <img src="oip999.png" alt="لاتيه ساخن" />
+          <div class="info">
+            <div>
+              <div class="name">لاتيه ساخن</div>
+              <small>حليب مخمّر مع إسبرسو</small>
+            </div>
+            <div class="price">65 ج.م</div>
+          </div>
+        </article>
+        <article class="dish reveal" data-category="drinks">
+          <img src="download.jpg" alt="عصير برتقال طازج" />
+          <div class="info">
+            <div>
+              <div class="name">عصير برتقال</div>
+              <small>مُحضّر من فاكهة طازجة</small>
+            </div>
+            <div class="price">55 ج.م</div>
+          </div>
+        </article>
+        <article class="dish reveal" data-category="desserts">
+          <img src="download00000.jpeg" alt="تشيز كيك فراولة" />
+          <div class="info">
+            <div>
+              <div class="name">تشيز كيك فراولة</div>
+              <small>قوام كريمي ونكهة لذيذة</small>
+            </div>
+            <div class="price">90 ج.م</div>
+          </div>
+        </article>
+        <article class="dish reveal" data-category="desserts">
+          <img src="cccccc.jpeg" alt="براونيز شوكولاتة" />
+          <div class="info">
+            <div>
+              <div class="name">براونيز شوكولاتة</div>
+              <small>غنية ومشبّعة</small>
+            </div>
+            <div class="price">75 ج.م</div>
+          </div>
+        </article>
+        <article class="dish reveal" data-category="main">
+          <img src="download (2).jpg" alt="بيتزا مارجريتا" />
+          <div class="info">
+            <div>
+              <div class="name">بيتزا مارجريتا</div>
+              <small>جبنة موزاريلا وصلصة طماطم</small>
+            </div>
+            <div class="price"><span class="badge">عرض</span> 120 ج.م</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers -->
+  <section class="section alt" id="offers">
+    <div class="container offer">
+      <div class="reveal">
+        <h2 class="title">العرض الخاص لهذا الشهر</h2>
+        <p class="subtitle">خصم <strong>20%</strong> على البيتزا والباستا حتى نهاية الشهر – لا تفوّت الفرصة!</p>
+        <div class="timer" id="countdown" aria-live="polite">
+          <div class="time-box"><div class="num" id="days">0</div><div class="lbl">أيام</div></div>
+          <div class="time-box"><div class="num" id="hours">0</div><div class="lbl">ساعات</div></div>
+          <div class="time-box"><div class="num" id="minutes">0</div><div class="lbl">دقائق</div></div>
+          <div class="time-box"><div class="num" id="seconds">0</div><div class="lbl">ثوانٍ</div></div>
+        </div>
+        <a href="#reservation" class="btn" style="margin-top:16px">احجز الآن</a>
+      </div>
+      <div class="media reveal" aria-hidden="true">
+        <img src="444444444.jpeg" alt="عرض بيتزا وباستا" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="title">قالوا عنّا</h2>
+      <p class="subtitle">آراء عملائنا تعكس التزامنا بالجودة.</p>
+      <div class="slider reveal" id="slider" aria-roledescription="carousel">
+        <div class="slides" id="slides">
+          <article class="testimonial">
+            <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="صورة عميل" />
+            <div>
+              <div class="name">مروان خالد</div>
+              <div>أفضل ستيك أكلته منذ فترة طويلة! الخدمة ممتازة والأجواء رائعة.</div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <img class="avatar" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop" alt="صورة عميلة" />
+            <div>
+              <div class="name">سارة محمد</div>
+              <div>الحلويات هنا خرافية! التشيز كيك لا يُقاوم.</div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <img class="avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop" alt="صورة عميل" />
+            <div>
+              <div class="name">أحمد سامي</div>
+              <div>سرعة في التقديم وأسعار مناسبة. بالتأكيد سأكرر الزيارة.</div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="dots" id="dots" aria-label="مؤشرات الشرائح"></div>
+    </div>
+  </section>
+
+  <!-- Contact & Reservation -->
+  <section class="section alt" id="contact">
+    <div class="container contact-grid">
+      <form id="reservation" novalidate>
+        <h2 class="title">احجز طاولتك</h2>
+        <p class="subtitle">املأ البيانات وسيتم التواصل لتأكيد الحجز.</p>
+        <div class="field">
+          <label for="name">الاسم</label>
+          <input id="name" name="name" type="text" placeholder="اسمك الكامل" required />
+        </div>
+        <div class="field">
+          <label for="phone">الهاتف</label>
+          <input id="phone" name="phone" type="tel" placeholder="01XXXXXXXXX" pattern="^0\d{10}$" required />
+        </div>
+        <div class="field">
+          <label for="date">التاريخ</label>
+          <input id="date" name="date" type="date" required />
+        </div>
+        <div class="field">
+          <label for="people">عدد الأفراد</label>
+          <select id="people" name="people" required>
+            <option value="" disabled selected>اختر العدد</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">تأكيد الحجز</button>
+        <p id="formMsg" role="status" style="margin-top:10px"></p>
+      </form>
+      <div>
+        <iframe title="موقع المطعم على الخريطة" loading="lazy" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.580507470249!2d31.2478797!3d30.0508151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c6f7c1a8c1%3A0x3a0f8e6a7f7cf2c!2sCairo%20Downtown!5e0!3m2!1sar!2seg!4v1699999999999"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="brand" style="color:#fff"><span class="logo">S</span>مطعم سافور</div>
+        <p style="opacity:.85">نكهات أصلية، خدمة راقية، وتجربة لا تُنسى.</p>
+        <div class="social" aria-label="تابعنا">
+          <a href="#" aria-label="فيسبوك" title="Facebook" rel="nofollow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M13 3h4V0h-4c-3.3 0-6 2.7-6 6v3H4v4h3v11h4V13h3.1l.9-4H11V6c0-1.1.9-2 2-2z"/></svg>
+          </a>
+          <a href="#" aria-label="إنستغرام" title="Instagram" rel="nofollow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6-1.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM12 9a3 3 0 100 6 3 3 0 000-6z"/></svg>
+          </a>
+          <a href="#" aria-label="تيك توك" title="TikTok" rel="nofollow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M16 3c1.1 1.5 2.6 2.6 4.5 3V9c-1.8-.1-3.4-.7-4.9-1.7V14a6 6 0 11-6-6c.3 0 .7 0 1 .1V11a2.9 2.9 0 00-1-.2 3 3 0 103 3V3h3.4z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin:8px 0">روابط سريعة</h4>
+        
+        ">
+          <a href="#home">الرئيسية</a><br />
+          <a href="#menu">القائمة</a><br />
+          <a href="#offers">العروض</a><br />
+          <a href="#contact">تواصل</a>
+        </nav>
+      </div>
+      <div>
+        <h4 style="margin:8px 0">معلومات</h4>
+        <div>القاهرة – وسط البلد</div>
+        <div>يومياً 10ص–12م</div>
+        <div>0100 000 0000</div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:18px; border-top: 1px solid rgba(255,255,255,.15); padding-top: 12px; font-size: 14px; opacity:.9">
+      © <span id="year"></span> مطعم سافور. جميع الحقوق محفوظة.
+    </div>
+  </footer>
+ 
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
